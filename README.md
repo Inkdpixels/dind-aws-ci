@@ -1,6 +1,11 @@
 # dind-aws-ci
 Docker in Docker container with the AWS CLI pre-installed for CI systems like GitLab CI
 
+### Installation
+```sh
+docker pull craftinteractive/dind-aws:latest
+```
+
 ### Usage
 Before the AWS CLI is fully operational, you need to configure it. This is usually done using `aws configure` command but since this it is an interactive shell questionaire which cannot be run with arguments, you need to create the `~/.aws/config` file via a simple shell script manually.
 
