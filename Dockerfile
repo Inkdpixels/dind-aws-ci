@@ -13,6 +13,12 @@ RUN apk add --update nodejs;
 RUN npm install -g ecs-task-deploy
 
 #
+# Install additional utils useful for deployments
+#
+RUN apk add --update curl
+RUN apk add --update unzip
+
+#
 # Bootstrap folders which are usually setup using the `aws configure` command.
 #
 RUN mkdir ~/.aws;
